@@ -90,5 +90,4 @@ setup a VPN for your network, or push the recorded files to a remote location pr
 
 ## TODOs / Issues
 
-* If AirBeam is shut off on the remote device while the script is running, the script will crash
-* Script only supports 1 device at the moment.
+See https://github.com/jfalken/pyairbeam/issues

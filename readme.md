@@ -4,10 +4,13 @@
 
 ## Why?
 
-AirBeam is an excellent and inexpensive app to easily use iOS/OSX devices to remote monitoring.
-However, I wanted to export 24x7 constant video streams form AirBeam devices to my own nas/s3 setup, using
+AirBeam is an excellent and inexpensive app to easily use iOS/OSX devices for remote monitoring.
+However, I wanted to export 24x7 constant video streams from AirBeam devices to my own nas/s3 setup, using
 the recording device to do compression as well. Since AirBeam only allowed motion detection (which
   I found to be unreliable), this module was written to interface with the REST interface AirBeam provides.
+
+I initially started doing this because I had extra/older iOS devices I could use for remote monitoring. However when looking at similarly capable IP cameras, I realized its actually cheaper
+and lower power to buy refurbished ipod touches from Apple and use them as cameras. This allows for numerous integrations since ipod touches are running iOS.
 
 ## Whats it do?
 

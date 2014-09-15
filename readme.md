@@ -36,7 +36,7 @@ log:
     format: '[%(asctime)s] [%(levelname)s] - %(message)s'
     dateformat: '%Y-%m-%d %H:%M:%S'
 
-# Dynect Credentials; read-only required
+# Camera details
 camera:
     name: ipad2
     hostname: http://blue.local

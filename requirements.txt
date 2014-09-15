@@ -1,0 +1,5 @@
+BeautifulSoup==3.2.1
+PyYAML==3.11
+lxml==3.4.0
+requests==2.4.1
+wsgiref==0.1.2

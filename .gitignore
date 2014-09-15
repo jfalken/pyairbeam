@@ -1,0 +1,5 @@
+venv/*
+notes/*
+*.prod
+*.pyc
+*.log

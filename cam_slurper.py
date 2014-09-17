@@ -179,7 +179,6 @@ def main(args, config):
 
                 # Make sure Camera is OK to record
                 info = cs.info()
-                if info['camera_status'] != 'YES': cs.start_camera()
                 if info['record_avail'] != 'YES': cs.start_camera()
 
                 # Check how long we've been recording for

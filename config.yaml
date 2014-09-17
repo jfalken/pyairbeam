@@ -4,15 +4,19 @@ log:
     format: '[%(asctime)s] [%(levelname)s] - %(message)s'
     dateformat: '%Y-%m-%d %H:%M:%S'
 
-# Dynect Credentials; read-only required
-camera:
-    name: ipad2
-    hostname: http://blue.local
-    store_path: /Volumes/Surveillance/videos/
+# Camera(s) you want to monitor. Dont use special chars in the camera name
+# port 80 if iOS device. port 8124 if OSX
+cameras:
+    - name: ipad2
+      hostname: http://blue.local:80
+      store_path: /Volumes/Surveillance/videos/
+    - name: ipad_air
+      hostname: http://maltheal.local:8124
+      store_path: /Volumes/Surveillance/videos/
 
 # how often to rotate the files (in seconds) (900 is 15 minutes)
 rotate_duration: 900
 
 # maximum size (sum of files) in store_path, in MB. oldest files will be 
 # deleted is size exceeds this value.
-max_dir_size: 50000
+max_dir_size: 500000

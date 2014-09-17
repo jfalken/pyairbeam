@@ -210,12 +210,13 @@ def main(args, config):
                         # if we're not recording, don't copy files (it will delay recording start)
                         if duration == 0:
                             continue
+                        logging.info('[%s] Downloading %s' % (cs.name, str(f)))
                         resp = cs.download_recording(f)
                         if resp == 'ok':
                             cs.delete_recording(f)
 
-                time.sleep(5)
                 logging.debug('[%s] Sleeping' % cs.name)
+                time.sleep(5)
             except KeyboardInterrupt:
                 print 'Quitting'
                 sys.exit(0)
